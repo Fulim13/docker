@@ -21,7 +21,7 @@
 
 *Run a container from the downloaded docker image*    
 ```docker run -p 8081:80 acantril/containerofcats```  
-browse to it - see the cats? :)    
+browse to it (http://localhost:8081/) - see the cats? :)    
 notice how the terminal is connected to the container  
 if we ctrl+c to exit.. the container stops  
 because the terminal is/was attached to the container  
