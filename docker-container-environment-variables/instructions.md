@@ -6,6 +6,15 @@ the -e `PMA_ARBITRARY=1` lets us specify the server to use each time via the UI,
 Run
 ```docker run --name phpmyadmin -d -p 8081:80 -e PMA_ARBITRARY=1 phpmyadmin/phpmyadmin```
 
+--name phpmyadmin:
+
+This flag assigns a name (phpmyadmin) to the container. You can use this name to refer to the container in future commands (e.g., stopping, starting, or inspecting the container).
+
+phpmyadmin/phpmyadmin:
+
+This specifies the Docker image to use for the container. Here, it pulls the official phpmyadmin/phpmyadmin image from Docker Hub.
+
+
 This will create a container running the `phpmyadmin` DB management application.  
 
 # Create a mariaDB container using ONLY environment variables
